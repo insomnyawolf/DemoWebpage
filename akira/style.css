@@ -1,0 +1,269 @@
+/* By insomnyawolf 2016 */
+
+/*basic reset*/
+
+canvas {
+    margin: 0; 
+    padding: 0;
+    display: block;
+    position: fixed;
+}
+
+/*font*/
+
+@font-face {
+    font-family: 'hymmnosregular';
+    src: url('hymmnos.woff2') format('woff2'),
+         url('hymmnos.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* BODY */
+
+body{   
+    font-family: 'hymmnosregular' !important;
+    font-size: 14px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+    text-align: center;
+    line-height: 20px;        
+    overflow-x:hidden;
+    font-size:15px;
+    line-height:1.5;
+    /*background-image: url("bg.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-attachment: fixed; 
+    background-size: 100% 100vh;
+    background: #202020; /* For browsers that do not support canvas */
+    background-size: 100% 120%;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    margin:0;
+}
+
+html{ 
+    height: 100%; 
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* TEXT */
+
+h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}
+
+h1 {
+    color: #c0c0c0;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+h2 {
+    color: #c0c0c0;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+h3 {
+    color: #c0c0c0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+h4 {
+    color: #c0c0c0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+h5 {
+    color: #c0c0c0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+h6 {
+    color: #c0c0c0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+p {
+    color: #c0c0c0;
+    margin: 4px;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+ol, ul {
+    list-style: none;
+    color: #c0c0c0;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,q:before, q:after {
+    content: '';
+    content: none;
+}
+
+hr{
+    border:0;
+    border-top:1px solid #eee;
+    margin:20px 0;
+}
+
+img{
+    margin-bottom:-5px;
+}
+
+a{
+    color:inherit;
+}
+
+/* LINKS */
+
+.navbar{
+    background-color: #3f51b5;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    position: relative;
+    background-image: url("./img/animeSky.jpg");
+    width: 100%;
+}
+
+a:hover.lnavbar, a:active.lnavbar{
+    background-color: #3548b0;
+}
+
+
+a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+
+a:link, a:visited {
+    display: inline-block;
+    background-color: transparent;
+    /*background-color: #003f80;*/
+    color: #c0c0c0;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:hover, a:active {
+	background-color: #303030;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
+    background-color: #151515;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #606060;
+    -webkit-box-shadow: inset 0 0 6pt rgba(0,0,0,0.1);
+}
+
+/*mobile adaptation*/
+@media screen and (min-width: 0px) and (max-width: 720px) {
+    #mobile-hide { display: none; }
+    .mobile-hide{ display: none; }
+    .right{float: center !important; display: inline;}
+}
+
+/*general styling*/
+.shadow-down{
+    box-shadow: 0px 3px 14px -4px rgba(0,0,0,0.75);
+}
+
+.shadow-all{
+    box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.75);
+}
+
+.container-main{
+    margin-top: 0%;
+    display:block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.right{
+    float: right !important;
+}
+
+.left{
+    float: left !important;
+}
+
+.pos{
+    position: fixed !important;
+}
+
+.akira{
+    margin-bottom: 2%;
+    margin-top:2%;
+    position: relative;
+}
+
+.card{
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+
+.color,.color:hover{
+    color:#fff!important;
+    background-color:#444!important;
+}
+
+.margin{
+    margin:80px 50px 5px auto!important;
+}
+
+.padding{
+    padding:8px 16px!important;
+}
+
+.displayContainer{
+    position:relative;
+}
+
+/* By insomnyawolf 2016 */
